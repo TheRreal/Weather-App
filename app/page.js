@@ -12,7 +12,7 @@ export default function Home() {
     try {
       // fetches/pulls the data from the weather station (API).
       const response = await fetch(
-        "https://api.open-meteo.com/v1/forecast?latitude=-25.89&longitude=139.35&current_weather=true&temperature_unit=fahrenheit"
+        "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&current_weather=true&temperature_unit=fahrenheit"
       );
       const data = await response.json();// almost like a translater | machine readable text to JS object that pulls from data.current_weather | converts json text to a JS object.
       
